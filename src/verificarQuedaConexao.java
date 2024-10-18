@@ -4,7 +4,16 @@ public class Main {
 
     // TODO: Preencha a função para verificar queda de conexão
     public static String verificarQuedaConexao(String[] velocidades) {
-        return
+        String saida = "";
+        for (String velocidade : velocidades) {
+            if (velocidade.trim().equalsIgnoreCase("0") ) {
+                saida = "Queda de Conexao";
+                break;
+            } else {
+                saida = "Sem Quedas";
+            }
+        }
+        return saida;
     }
 
     public static void main(String[] args) {
