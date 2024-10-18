@@ -7,7 +7,16 @@ public class Main {
         int total = 0;
 
         // TODO: Some todas as velocidades registradas e calcule a média
-        return
+        int soma = 0;
+        int quantidade = velocidades.length;
+
+        for (String velocidade : velocidades) {
+            soma += Integer.parseInt(velocidade.trim());
+        }
+
+        double media = (double) soma / quantidade;
+
+        return media;
     }
 
     public static void main(String[] args) {
